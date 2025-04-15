@@ -1,85 +1,129 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kritisha Jain – UX Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kritisha Jain's UX Portfolio</title>
+  
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header, footer { background: #333; color: white; padding: 1rem; text-align: center; }
-    main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-    h1, h2 { color: #2c3e50; }
-    section { padding: 2rem 0; border-bottom: 1px solid #eee; }
-    iframe { width: 100%; height: 480px; border: none; margin-top: 1rem; }
-    .hidden { display: none; }
-    .password-box input { padding: 0.5rem; margin-right: 0.5rem; }
-    .password-box button { padding: 0.5rem 1rem; }
-    a { color: #007acc; text-decoration: none; }
+    /* General Reset */
+    body, h1, h2, p, iframe {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+      color: #333;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 40px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      font-weight: 300;
+      opacity: 0.8;
+    }
+
+    /* Case Study Section */
+    .case-study {
+      background-color: white;
+      margin: 40px auto;
+      padding: 40px;
+      max-width: 1200px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+
+    .case-study:hover {
+      transform: translateY(-5px);
+    }
+
+    .case-study h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 32px;
+      font-weight: 600;
+      color: #222;
+      margin-bottom: 15px;
+    }
+
+    .case-study p {
+      font-size: 18px;
+      font-weight: 300;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* iframe Styling */
+    .case-study iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+      .case-study {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      .case-study iframe {
+        height: 400px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kritisha Jain</h1>
-    <p>Senior UX Researcher • jkritisha@gmail.com</p>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m Kritisha Jain, a UX Researcher with 8+ years of experience solving complex design problems across APIs, GUIs, and hardware/software products. I specialize in human-centered research, usability testing, and cross-functional collaboration to drive thoughtful design decisions.</p>
-    </section>
+<header>
+  <h1>Kritisha Jain's UX Portfolio</h1>
+  <p>Work in progress. All case studies are continuously updated.</p>
+</header>
 
-    <section id="case-study-1">
-      <h2>Case Study 1: Submission Workflow Redesign (Password Protected)</h2>
-      <div class="password-box" id="password-section">
-        <p>Enter password to view:</p>
-        <input type="password" id="password" placeholder="Enter password">
-        <button onclick="checkPassword()">Submit</button>
-        <p id="error" style="color: red;"></p>
-      </div>
-      <div id="protected-content" class="hidden">
-        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ0aFakeEmbed1234567890/pub?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
-      </div>
-      <p><em>Don’t have the password? <a href="mailto:jkritisha@gmail.com">Request access</a></em></p>
-    </section>
+<section class="case-study">
+  <h2>Redesigning a Collaborative Platform for Better User Experience</h2>
+  <p>A case study focusing on improving the user submission and packaging experience for both casual and advanced users.</p>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8gIAbBQzrJJvziGHjRnz_xnOFXqhwBWIG1dIeibh7Aj541zzyf-OW-N70HUIOEXZM7ELtTVNQWcjl/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+</section>
 
-    <section id="case-study-2">
-      <h2>Case Study 2: Accessible Makerspaces</h2>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ1AnotherFakeEmbed/pub?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
-    </section>
+<section class="case-study">
+  <h2>Designing Accessible Makerspaces for All</h2>
+  <p>Exploring how to create more inclusive environments for individuals with diverse needs within makerspaces.</p>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRurnyddCjq8lbr08txZGdNooKwEK3BWKQFPnPNrFuNQ-ne55dQ90VMdSpU1kjRyAr96aMuDe3FvfO0/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+</section>
 
-    <section id="case-study-3">
-      <h2>Case Study 3: Usability Testing Strategy</h2>
-      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ3FinalFakeEmbed/pub?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
-    </section>
+<section class="case-study">
+  <h2>Enhancing User Interaction with Complex Software</h2>
+  <p>Research-driven insights to simplify and optimize user interactions in a complex, technical software environment.</p>
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQ-lDTma5sLrTy2VQJ2CO---JcxmwrcwAFEb8QA19qnhrMm4Lg66JVdiJQaX2wdkGR6TssAXBiCBEw/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+</section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <p><a href="resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Feel free to reach out via email at <a href="mailto:jkritisha@gmail.com">jkritisha@gmail.com</a>.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Kritisha Jain</p>
-  </footer>
-
-  <script>
-    function checkPassword() {
-      const input = document.getElementById('password').value;
-      const correct = atob("dXhjYXNlMjAyNA==");  // "uxcase2024" encoded
-      if (input === correct) {
-        document.getElementById('protected-content').classList.remove('hidden');
-        document.getElementById('password-section').classList.add('hidden');
-      } else {
-        document.getElementById('error').textContent = "Incorrect password. Try again.";
-      }
-    }
-  </script>
 </body>
 </html>
+
