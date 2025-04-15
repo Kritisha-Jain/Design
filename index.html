@@ -4,29 +4,48 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kritisha Jain's UX Portfolio</title>
-  
+
   <!-- Link to Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  
+
   <style>
-    /* General Reset */
     body, h1, h2, p, iframe {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Body Styling */
     body {
       font-family: 'Open Sans', sans-serif;
       background-color: #f4f4f4;
       line-height: 1.6;
       color: #333;
-      padding: 0;
-      margin: 0;
     }
 
-    /* Header Styling */
+    nav {
+      background-color: #ffffff;
+      padding: 10px 30px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      margin: 0 20px;
+      font-size: 16px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
     header {
       background-color: #222;
       color: white;
@@ -48,37 +67,51 @@
       opacity: 0.8;
     }
 
-    /* Case Study Section */
-    .case-study {
+    .intro, .about-me, .contact, .resume, .case-study {
       background-color: white;
       margin: 40px auto;
       padding: 40px;
       max-width: 1200px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-      transition: transform 0.3s ease;
     }
 
-    .case-study:hover {
-      transform: translateY(-5px);
+    .intro {
+      background-color: #e6e6e6;
+      text-align: center;
     }
 
-    .case-study h2 {
-      font-family: 'Montserrat', sans-serif;
+    .intro h2, .about-me h2, .contact h2, .resume h2, .case-study h2 {
       font-size: 32px;
+      font-family: 'Montserrat', sans-serif;
       font-weight: 600;
       color: #222;
       margin-bottom: 15px;
     }
 
-    .case-study p {
+    .intro p, .about-me p, .contact p, .resume p {
       font-size: 18px;
-      font-weight: 300;
       color: #555;
       margin-bottom: 20px;
     }
 
-    /* iframe Styling */
+    .intro img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    .resume a {
+      font-size: 18px;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .resume a:hover {
+      text-decoration: underline;
+    }
+
     .case-study iframe {
       width: 100%;
       height: 650px;
@@ -86,13 +119,43 @@
       border-radius: 8px;
     }
 
-    /* Responsive Design */
+    .case-study.locked iframe {
+      display: none;
+    }
+
+    .case-study.locked .password-section {
+      display: block;
+    }
+
+    .password-section {
+      text-align: center;
+    }
+
+    .password-section input {
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .password-section button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
     @media screen and (max-width: 768px) {
-      .case-study {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+      .intro, .about-me, .resume, .case-study {
         padding: 20px;
         margin: 20px;
       }
-
       .case-study iframe {
         height: 400px;
       }
@@ -101,28 +164,66 @@
 </head>
 <body>
 
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="work.html">Work</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
   <h1>Kritisha Jain's UX Portfolio</h1>
   <p>Work in progress. All case studies are continuously updated.</p>
 </header>
 
-<section class="case-study">
+<section class="intro">
+  <h2>Hi, I'm Kritisha</h2>
+  <p>I'm a UX Researcher passionate about creating intuitive experiences. My work spans UX research, design strategy, and usability testing. I love solving complex user problems with thoughtful solutions.</p>
+  <img src="Capture.JPG" alt="Kritisha Jain">
+</section>
+
+<section class="about-me">
+  <h2>About Me</h2>
+  <p><strong>Kritisha Jain</strong><br>
+  UX Researcher | Design Strategist | MIT Alum</p>
+  <p>I’m a UX professional with 8+ years of experience solving complex design problems across software, hardware, APIs, and graphical interfaces. With a background in research, design, and storytelling, I specialize in uncovering user needs and translating them into thoughtful, intuitive experiences.</p>
+  <p>I’m currently a UX Researcher at MathWorks, and I bring a strategic, systems-level mindset to every project—whether it’s reimagining a developer tool, improving platform usability, or crafting the next big user journey.</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you'd like to collaborate or discuss UX strategy, feel free to reach out!</p>
+  <p>Email: <a href="mailto:jkritisha@gmail.com">jkritisha@gmail.com</a></p>
+</section>
+
+<section class="resume">
+  <h2>Download My Resume</h2>
+  <p>You can download my latest resume by clicking the link below:</p>
+  <a href="4-10%20Kritisha%20Jain%20User%20Experience%20Researcher.pdf" target="_blank">Download Resume</a>
+</section>
+
+<section class="case-study locked" id="locked-case">
   <h2>Redesigning a Collaborative Platform for Better User Experience</h2>
   <p>A case study focusing on improving the user submission and packaging experience for both casual and advanced users.</p>
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8gIAbBQzrJJvziGHjRnz_xnOFXqhwBWIG1dIeibh7Aj541zzyf-OW-N70HUIOEXZM7ELtTVNQWcjl/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
+  <div class="password-section">
+    <p>This case study is password protected.</p>
+    <input type="password" id="casePassword" placeholder="Enter password">
+    <button onclick="unlockCaseStudy()">Submit</button>
+    <p>If you don't have the password, <a href="mailto:jkritisha@gmail.com">request access</a>.</p>
+  </div>
+  <iframe id="lockedIframe" src="https://docs.google.com/presentation/d/e/2PACX-1vQ8gIAbBQzrJJvziGHjRnz_xnOFXqhwBWIG1dIeibh7Aj541zzyf-OW-N70HUIOEXZM7ELtTVNQWcjl/pub?start=false&loop=false&delayms=3000&rm=minimal" allowfullscreen="true"></iframe>
 </section>
 
-<section class="case-study">
-  <h2>Designing Accessible Makerspaces for All</h2>
-  <p>Exploring how to create more inclusive environments for individuals with diverse needs within makerspaces.</p>
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRurnyddCjq8lbr08txZGdNooKwEK3BWKQFPnPNrFuNQ-ne55dQ90VMdSpU1kjRyAr96aMuDe3FvfO0/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
-</section>
-
-<section class="case-study">
-  <h2>Enhancing User Interaction with Complex Software</h2>
-  <p>Research-driven insights to simplify and optimize user interactions in a complex, technical software environment.</p>
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQ-lDTma5sLrTy2VQJ2CO---JcxmwrcwAFEb8QA19qnhrMm4Lg66JVdiJQaX2wdkGR6TssAXBiCBEw/pubembed?start=false&loop=false&delayms=3000" allowfullscreen="true"></iframe>
-</section>
+<script>
+  function unlockCaseStudy() {
+    const passwordInput = document.getElementById('casePassword').value;
+    if (passwordInput === 'uxcase2024') {
+      document.getElementById('locked-case').classList.remove('locked');
+    } else {
+      alert('Incorrect password. Please try again or contact Kritisha for access.');
+    }
+  }
+</script>
 
 </body>
 </html>
