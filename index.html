@@ -2,11 +2,222 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kritisha Jain | UX Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kritisha Jain's UX Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    nav {
+      background: #fff;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: #333;
+    }
+
+    nav a:hover {
+      color: #0077cc;
+    }
+
+    header {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.8;
+    }
+
+    section {
+      max-width: 1000px;
+      background: #fff;
+      margin: 40px auto;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      text-align: center;
+      background: #e6e6e6;
+    }
+
+    .intro img {
+      width: 160px;
+      border-radius: 50%;
+      margin-top: 20px;
+    }
+
+    .resume a {
+      color: #0077cc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .resume a:hover {
+      text-decoration: underline;
+    }
+
+    iframe {
+      width: 100%;
+      height: 650px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .password-section {
+      text-align: center;
+    }
+
+    .password-section input {
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .password-section button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .locked iframe {
+      display: none;
+    }
+
+    .locked .password-section {
+      display: block;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+      }
+
+      iframe {
+        height: 400px;
+      }
+
+      section {
+        padding: 25px;
+        margin: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Kritisha Jain's UX Portfolio</h1>
-  <p>This is a sample landing page.</p>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="work.html">Work</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <h1>Kritisha Jain's UX Portfolio</h1>
+  <p>Work in progress. All case studies are continuously updated.</p>
+</header>
+
+<section class="intro">
+  <h2>Hi, I'm Kritisha</h2>
+  <p>I'm a UX Researcher passionate about creating intuitive experiences. My work spans UX research, design strategy, and usability testing. I love solving complex user problems with thoughtful solutions.</p>
+  <img src="Capture.JPG" alt="Kritisha Jain">
+</section>
+
+<section class="about-me">
+  <h2>About Me</h2>
+  <p><strong>Kritisha Jain</strong><br>
+  UX Researcher | Design Strategist | MIT Alum</p>
+  <p>I’m a UX professional with 8+ years of experience solving complex design problems across software, hardware, APIs, and graphical interfaces. With a background in research, design, and storytelling, I specialize in uncovering user needs and translating them into thoughtful, intuitive experiences.</p>
+  <p>I’m currently a UX Researcher at MathWorks, and I bring a strategic, systems-level mindset to every project—whether it’s reimagining a developer tool, improving platform usability, or crafting the next big user journey.</p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you'd like to collaborate or discuss UX strategy, feel free to reach out!</p>
+  <p>Email: <a href="mailto:jkritisha@gmail.com">jkritisha@gmail.com</a></p>
+</section>
+
+<section class="resume">
+  <h2>Download My Resume</h2>
+  <p>You can download my latest resume by clicking the link below:</p>
+  <a href="4-10%20Kritisha%20Jain%20User%20Experience%20Researcher.pdf" target="_blank">Download Resume</a>
+</section>
+
+<section class="case-study locked" id="locked-case">
+  <h2>Redesigning a Collaborative Platform for Better User Experience</h2>
+  <p>A case study focusing on improving the user submission and packaging experience for both casual and advanced users.</p>
+
+  <div class="password-section">
+    <p>This case study is password protected.</p>
+    <input type="password" id="casePassword" placeholder="Enter password">
+    <button onclick="unlockCaseStudy()">Submit</button>
+    <p>If you don't have the password, <a href="mailto:jkritisha@gmail.com">request access</a>.</p>
+  </div>
+
+  <iframe id="lockedIframe" src="https://docs.google.com/presentation/d/e/2PACX-1vQ8gIAbBQzrJJvziGHjRnz_xnOFXqhwBWIG1dIeibh7Aj541zzyf-OW-N70HUIOEXZM7ELtTVNQWcjl/pub?start=false&loop=false&delayms=3000&rm=minimal" allowfullscreen></iframe>
+</section>
+
+<script>
+  function unlockCaseStudy() {
+    const input = document.getElementById('casePassword').value;
+    const caseStudy = document.getElementById('locked-case');
+    if (input === 'uxcase2024') {
+      caseStudy.classList.remove('locked');
+    } else {
+      alert('Incorrect password. Please try again or email Kritisha.');
+    }
+  }
+</script>
+
 </body>
 </html>
