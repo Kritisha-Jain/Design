@@ -1,226 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kritisha Jain – Resume</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume – Kritisha Jain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@400;600&display=swap">
   <style>
+    /* Global Styles */
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
+      font-family: 'Open Sans', sans-serif;
+      background: #fdfdfd;
       color: #222;
-      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
+
+    /* Navigation */
     nav {
+      text-align: center;
+      padding: 20px;
       background-color: #fff;
-      border-bottom: 1px solid #ddd;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: flex-start;
-      gap: 20px;
-      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
+
     nav a {
+      margin: 0 15px;
+      color: #0077cc;
       text-decoration: none;
-      color: #0044cc;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* Header */
+    header {
+      padding: 60px 20px 40px;
+      text-align: center;
+      background-color: #f4f7fa;
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+    }
+
+    /* Container */
     .container {
-      max-width: 960px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
     }
-    h1, h2, h3 {
-      font-weight: 700;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
+
+    /* Section Headings */
     h2 {
-      font-size: 1.8em;
-      margin-top: 2em;
+      font-size: 28px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
     }
+
     h3 {
-      font-size: 1.2em;
-      margin-top: 1.5em;
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    /* Job Description */
+    .job {
+      margin-bottom: 40px;
+    }
+
+    .job ul {
+      list-style: disc;
+      padding-left: 20px;
       color: #444;
     }
-    .subheading {
-      color: #777;
-      font-weight: 600;
-      margin-top: -1em;
-      margin-bottom: 2em;
+
+    .job li {
+      margin-bottom: 10px;
     }
-    .section {
-      margin-bottom: 3em;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .job-title {
-      font-weight: 600;
-      font-size: 1.1em;
-    }
-    .job-meta {
-      color: #666;
-      font-size: 0.9em;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 0.8em;
-    }
-    .download-print {
-      margin-top: 2em;
-      padding: 1em 0;
-      border-top: 1px solid #ccc;
+
+    /* Contact Section */
+    .contact {
+      margin-top: 40px;
       text-align: center;
     }
-    .download-print a, .download-print button {
+
+    .contact a {
+      color: #0077cc;
+      text-decoration: none;
       font-weight: 600;
-      color: #0044cc;
-      background: none;
-      border: none;
-      cursor: pointer;
-      margin: 0 10px;
-      font-size: 1em;
+    }
+
+    .contact a:hover {
       text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="work.html">Work</a>
-    <a href="resume.html">Resume</a>
-    <a href="mailto:jkritisha@gmail.com">Contact</a>
-  </nav>
-  <div class="container">
-    <h1>Kritisha Jain</h1>
-    <div class="subheading">UX Researcher · Design Strategist · Human-Centered Thinker</div>
 
-    <div class="download-print">
-      <a href="kritisha_jain_resume.pdf" download>📄 Download Resume (PDF)</a>
-      <button onclick="window.print()">🖨️ Print this Page</button>
-    </div>
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="work.html">Work</a>
+  <a href="resume.html">Resume</a>
+  <a href="mailto:jkritisha@gmail.com">Contact</a>
+</nav>
 
-    <div class="section">
-      <h2>About</h2>
-      <p>I’m Kritisha Jain — an internationally trained, award-winning UX Researcher and Design Strategist with 8+ years of experience across UX research, product design, and creative strategy. I bring human-centered innovation to life through immersive storytelling, participatory methods, and design strategy. I’ve worked with organizations like MathWorks, MIT, Mastercard Foundation, and Amnesty International to shape experiences in engineering tools, social impact technologies, and AI-powered platforms. I believe deeply in inclusive design, and my work has ranged from improving workflows for developers to making makerspaces accessible to the blind.</p>
-    </div>
+<!-- Header Section -->
+<header>
+  <h1>Resume</h1>
+</header>
 
-    <div class="section">
-      <h2>Professional Experience</h2>
-      <div class="job">
-        <div class="job-title">UX Researcher – MathWorks</div>
-        <div class="job-meta">Natick, MA (Hybrid) · 2021 – Present</div>
-        <ul>
-          <li>Led foundational and iterative UX research for MATLAB features, influencing core product direction and usability improvements.</li>
-          <li>Redesigned File Exchange submission workflows, validated through multiple rounds of usability testing with diverse user segments.</li>
-          <li>Introduced standardized UX testing for repository workflows used by third-party developers.</li>
-          <li>Drove accessibility enhancements in MATLAB Online, impacting strategic roadmap priorities.</li>
-          <li>Delivered insights in 8+ high-stakes design reviews, ensuring alignment across design, engineering, and PM stakeholders.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">UX Research Consultant – BetterHalf.ai</div>
-        <div class="job-meta">Remote · 2023</div>
-        <ul>
-          <li>Conducted deep qualitative research and contextual interviews with female users of the matchmaking platform.</li>
-          <li>Presented actionable insights to leadership that led to redesign of matchmaking flows and female-focused features.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">UX Research Fellow – MIT Legatum Center + Mastercard Foundation</div>
-        <div class="job-meta">Cambridge, MA · 2020 – 2021</div>
-        <ul>
-          <li>Led market and user research for ‘Dastaan’, a therapy chatbot for intimate partner violence survivors.</li>
-          <li>Insights contributed to roadmap direction and helped secure investor attention at Legatum Demo Day.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">Design Research Fellow – AAUW</div>
-        <div class="job-meta">Cambridge, MA · 2020 – 2021</div>
-        <ul>
-          <li>Led design thinking workshops and contextual inquiry with underserved women to co-create self-defense programs.</li>
-          <li>MIT PKG IDEAS Finalist for Social Innovation 2020.</li>
-        </ul>
-      </div>
-
-      <div class="job">
-        <div class="job-title">Senior Copywriter – PAD Agency</div>
-        <div class="job-meta">Hyderabad, India · 2017 – 2018</div>
-        <ul>
-          <li>Led communication strategy and creative execution across branding, print, and digital for 20+ clients including Tata and Dr. Reddy’s.</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>MIT – Integrated Design & Management</strong> (M.S., GPA: 4.9/5)</li>
-        <li><strong>Srishti School of Art, Design & Technology</strong> (Professional Diploma, GPA: 3.2/4)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Projects & Recognition</h2>
-      <ul>
-        <li><strong>Capstone:</strong> Accessible Makerspaces for Visually Impaired Designers (Featured at MIT D-Lab)</li>
-        <li><strong>Bambino Kits:</strong> Created print’n’play developmental kits for toddlers during COVID (MIT Gabrieli Lab)</li>
-        <li><strong>Kitchen Canvas:</strong> Co-founded HCD-based holiday product business; sold out at MIT Sales Gala</li>
-        <li><strong>#IWillGoOut:</strong> Coordinated 33-city women’s rights protest, interviewed by British Vogue</li>
-        <li><strong>#ChalkTheWalk:</strong> Keynote speaker on campaign strategy at Community Business Conference</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Skills & Tools</h2>
-      <ul>
-        <li><strong>Research:</strong> Interviews, Usability Testing, Ethnography, Participatory Design</li>
-        <li><strong>Tools:</strong> Figma, Miro, Adobe Suite, Tableau, Python, HTML/CSS</li>
-        <li><strong>Frameworks:</strong> Human-Centered Design, Service Design, Agile UX</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Mentorship & Speaking</h2>
-      <ul>
-        <li>Mentor – Women in Design SF (2020)</li>
-        <li>Speaker – Brown University’s Womxn in STEM Symposium</li>
-        <li>Keynote – Community Business Conference (2018)</li>
-      </ul>
-    </div>
+<!-- Main Content -->
+<div class="container">
+  
+  <!-- Experience Section -->
+  <div class="job">
+    <h2>UX Researcher – MathWorks</h2>
+    <h3>2021 – Present</h3>
+    <ul>
+      <li>Led research on submission workflows used by advanced and casual users.</li>
+      <li>Conducted stakeholder interviews, synthesized patterns, and informed design decisions.</li>
+      <li>Collaborated closely with design and dev teams to validate improvements with users.</li>
+    </ul>
   </div>
 
-  <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    });
+  <div class="job">
+    <h2>UX Designer & Writer – Previous Roles</h2>
+    <h3>2015 – 2021</h3>
+    <ul>
+      <li>Worked across digital and hardware interfaces in UX design and technical writing capacities.</li>
+      <li>Specialized in user onboarding flows, accessible documentation, and prototyping.</li>
+      <li>Facilitated research sprints to refine product journeys across roles and personas.</li>
+    </ul>
+  </div>
 
-    document.querySelectorAll('.section').forEach(section => {
-      observer.observe(section);
-    });
-  </script>
+  <!-- Education Section -->
+  <div class="job">
+    <h2>Education</h2>
+    <h3>Master’s in Engineering & Management – MIT</h3>
+    <ul>
+      <li>Graduated: 2021</li>
+      <li>Thesis: "User-Centered Design in UX Research" – Focused on designing effective user testing methodologies for hardware interfaces.</li>
+    </ul>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="job">
+    <h2>Skills</h2>
+    <ul>
+      <li>User Research (Interviews, Surveys, Usability Testing)</li>
+      <li>UX Design (Wireframing, Prototyping, Interaction Design)</li>
+      <li>Design Tools (Figma, Sketch, InVision)</li>
+      <li>Frontend Development (HTML, CSS, JavaScript)</li>
+    </ul>
+  </div>
+  
+  <!-- Contact Section -->
+  <div class="contact">
+    <p>Feel free to <a href="mailto:jkritisha@gmail.com">contact me</a> for more details or to discuss opportunities.</p>
+  </div>
+
+</div>
+
 </body>
 </html>
