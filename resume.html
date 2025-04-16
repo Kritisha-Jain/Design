@@ -56,8 +56,12 @@
       padding: 40px 20px;
     }
 
-    /* Section Headings */
-    h2 {
+    /* Section Styles */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
       font-size: 28px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
@@ -65,15 +69,27 @@
       margin-bottom: 20px;
     }
 
-    h3 {
-      font-size: 18px;
-      color: #666;
-      margin-bottom: 10px;
+    .section p {
+      font-size: 16px;
+      color: #444;
     }
 
-    /* Job Description */
+    /* Job Styles */
     .job {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+
+    .job-title {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      color: #222;
+    }
+
+    .job-meta {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
     }
 
     .job ul {
@@ -83,6 +99,17 @@
     }
 
     .job li {
+      margin-bottom: 10px;
+    }
+
+    /* List Styles */
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+      color: #444;
+    }
+
+    li {
       margin-bottom: 10px;
     }
 
@@ -132,55 +159,54 @@
 
 <!-- Main Content -->
 <div class="container">
-  
-  <!-- Experience Section -->
-  <div class="job">
-    <h2>UX Researcher – MathWorks</h2>
-    <h3>2021 – Present</h3>
-    <ul>
-      <li>Led research on submission workflows used by advanced and casual users.</li>
-      <li>Conducted stakeholder interviews, synthesized patterns, and informed design decisions.</li>
-      <li>Collaborated closely with design and dev teams to validate improvements with users.</li>
-    </ul>
+
+  <!-- About Section -->
+  <div class="section">
+    <h2>About</h2>
+    <p>I’m Kritisha Jain — an internationally trained, award-winning UX Researcher and Design Strategist with 8+ years of experience across UX research, product design, and creative strategy. I bring human-centered innovation to life through immersive storytelling, participatory methods, and design strategy. I’ve worked with organizations like MathWorks, MIT, Mastercard Foundation, and Amnesty International to shape experiences in engineering tools, social impact technologies, and AI-powered platforms. I believe deeply in inclusive design, and my work has ranged from improving workflows for developers to making makerspaces accessible to the blind.</p>
   </div>
 
-  <div class="job">
-    <h2>UX Designer & Writer – Previous Roles</h2>
-    <h3>2015 – 2021</h3>
-    <ul>
-      <li>Worked across digital and hardware interfaces in UX design and technical writing capacities.</li>
-      <li>Specialized in user onboarding flows, accessible documentation, and prototyping.</li>
-      <li>Facilitated research sprints to refine product journeys across roles and personas.</li>
-    </ul>
-  </div>
+  <!-- Professional Experience Section -->
+  <div class="section">
+    <h2>Professional Experience</h2>
 
-  <!-- Education Section -->
-  <div class="job">
-    <h2>Education</h2>
-    <h3>Master’s in Engineering & Management – MIT</h3>
-    <ul>
-      <li>Graduated: 2021</li>
-      <li>Thesis: "User-Centered Design in UX Research" – Focused on designing effective user testing methodologies for hardware interfaces.</li>
-    </ul>
-  </div>
+    <div class="job">
+      <div class="job-title">UX Researcher – MathWorks</div>
+      <div class="job-meta">Natick, MA (Hybrid) · 2021 – Present</div>
+      <ul>
+        <li>Led foundational and iterative UX research for MATLAB features, influencing core product direction and usability improvements.</li>
+        <li>Redesigned File Exchange submission workflows, validated through multiple rounds of usability testing with diverse user segments.</li>
+        <li>Introduced standardized UX testing for repository workflows used by third-party developers.</li>
+        <li>Drove accessibility enhancements in MATLAB Online, impacting strategic roadmap priorities.</li>
+        <li>Delivered insights in 8+ high-stakes design reviews, ensuring alignment across design, engineering, and PM stakeholders.</li>
+      </ul>
+    </div>
 
-  <!-- Skills Section -->
-  <div class="job">
-    <h2>Skills</h2>
-    <ul>
-      <li>User Research (Interviews, Surveys, Usability Testing)</li>
-      <li>UX Design (Wireframing, Prototyping, Interaction Design)</li>
-      <li>Design Tools (Figma, Sketch, InVision)</li>
-      <li>Frontend Development (HTML, CSS, JavaScript)</li>
-    </ul>
-  </div>
-  
-  <!-- Contact Section -->
-  <div class="contact">
-    <p>Feel free to <a href="mailto:jkritisha@gmail.com">contact me</a> for more details or to discuss opportunities.</p>
-  </div>
+    <div class="job">
+      <div class="job-title">UX Research Consultant – BetterHalf.ai</div>
+      <div class="job-meta">Remote · 2023</div>
+      <ul>
+        <li>Conducted deep qualitative research and contextual interviews with female users of the matchmaking platform.</li>
+        <li>Presented actionable insights to leadership that led to redesign of matchmaking flows and female-focused features.</li>
+      </ul>
+    </div>
 
-</div>
+    <div class="job">
+      <div class="job-title">UX Research Fellow – MIT Legatum Center + Mastercard Foundation</div>
+      <div class="job-meta">Cambridge, MA · 2020 – 2021</div>
+      <ul>
+        <li>Led market and user research for ‘Dastaan’, a therapy chatbot for intimate partner violence survivors.</li>
+        <li>Insights contributed to roadmap direction and helped secure investor attention at Legatum Demo Day.</li>
+      </ul>
+    </div>
 
-</body>
-</html>
+    <div class="job">
+      <div class="job-title">Design Research Fellow – AAUW</div>
+      <div class="job-meta">Cambridge, MA · 2020 – 2021</div>
+      <ul>
+        <li>Led design thinking workshops and contextual inquiry with underserved women to co-create self-defense programs.</li>
+        <li>MIT PKG IDEAS Finalist for Social Innovation 2020.</li>
+      </ul>
+   
+::contentReference[oaicite:0]{index=0}
+ 
