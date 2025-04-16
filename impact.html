@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Impact | Kritisha Jain</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #222;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: #111;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .caption {
+      margin-top: 0.8rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .tags {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #777;
+      font-style: italic;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 2rem;
+      color: #888;
+    }
+
+    @media(min-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .project {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav style="display: flex; justify-content: center; background-color: #ffffff; border-bottom: 1px solid #ddd; padding: 1rem; font-family: 'Helvetica Neue', sans-serif; position: sticky; top: 0; z-index: 100;">
+        <a href="index.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Home</a>
+        <a href="about.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">About</a>
+        <a href="work.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Work</a>
+        <a href="resume.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Resume</a>
+        <a href="impact.html" class="nav-link active" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Impact</a>
+        <a href="contact.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Contact</a>
+      </nav>
+      
+      <style>
+        /* Sticky Nav */
+        nav {
+          position: sticky;
+          top: 0;
+          z-index: 100;
+        }
+      
+        /* Hover Effect */
+        .nav-link:hover {
+          color: #007bff;
+          text-decoration: underline;
+        }
+      
+        /* Active Page Highlight */
+        .nav-link.active {
+          font-weight: bold;
+          color: #007bff;
+        }
+      </style>
+      
+
+  <div class="container">
+    <h1>My Impact</h1>
+    <p>I’ve organized nationwide protests, public art actions, and educational workshops focused on reclaiming public spaces, creating safety for marginalized genders, and driving policy reform. My work has been featured in British Vogue and multiple conferences across India.</p>
+
+    <div class="gallery">
+
+      <div class="project">
+        <img src="images/placeholder.jpg" alt="#IWillGoOut Protest">
+        <div class="caption"><strong>#IWillGoOut</strong> — A national protest reclaiming public spaces for women after mass molestation on NYE in Bangalore. I led the Hyderabad chapter and coordinated with national organizers across 30+ cities.</div>
+        <div class="tags">Activism • Public Protest • Organizing</div>
+      </div>
+
+      <div class="project">
+        <img src="images/placeholder.jpg" alt="#ChalkTheWalk">
+        <div class="caption"><strong>#ChalkTheWalk</strong> — A city-wide chalk art campaign visualizing stories of street harassment and protest slogans across public walkways.</div>
+        <div class="tags">Public Art • Awareness • Community Action</div>
+      </div>
+
+      <div class="project">
+        <img src="images/placeholder.jpg" alt="Independence Day for All">
+        <div class="caption"><strong>Independence Day for All</strong> — A participatory march to reclaim Independence Day for LGBTQIA+ and other marginalized voices.</div>
+        <div class="tags">March • LGBTQIA+ • Solidarity</div>
+      </div>
+
+      <div class="project">
+        <img src="images/placeholder.jpg" alt="Vogue Feature">
+        <div class="caption"><strong>Featured in British Vogue</strong> — Highlighted as one of the key organizers and artists creating impact through feminist activism.</div>
+        <div class="tags">Featured In • Storytelling • Global Visibility</div>
+      </div>
+
+      <div class="project">
+        <img src="images/placeholder.jpg" alt="Workshops and Talks">
+        <div class="caption"><strong>Workshops + Conferences</strong> — Facilitated sessions on gender equity, safety, and activism at national forums and academic conferences.</div>
+        <div class="tags">Speaking • Workshops • Thought Leadership</div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Kritisha Jain. All rights reserved.
+  </footer>
+</body>
+</html>

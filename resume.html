@@ -74,13 +74,36 @@
 </head>
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="work.html">Work</a>
-  <a href="resume.html">Resume</a>
-  <a href="mailto:jkritisha@gmail.com">Contact</a>
-</nav>
+  <nav style="display: flex; justify-content: center; background-color: #ffffff; border-bottom: 1px solid #ddd; padding: 1rem; font-family: 'Helvetica Neue', sans-serif; position: sticky; top: 0; z-index: 100;">
+    <a href="index.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Home</a>
+    <a href="about.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">About</a>
+    <a href="work.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Work</a>
+    <a href="resume.html" class="nav-link active" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Resume</a>
+    <a href="impact.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Impact</a>
+    <a href="contact.html" class="nav-link" style="margin: 0 1rem; text-decoration: none; color: #333; font-weight: 500;">Contact</a>
+  </nav>
+  
+  <style>
+    /* Sticky Nav */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+  
+    /* Hover Effect */
+    .nav-link:hover {
+      color: #007bff;
+      text-decoration: underline;
+    }
+  
+    /* Active Page Highlight */
+    .nav-link.active {
+      font-weight: bold;
+      color: #007bff;
+    }
+  </style>
+  
 
 <div class="container">
   <h1>Resume</h1>
