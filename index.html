@@ -5,34 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kritisha Jain's UX Portfolio</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Kritisha Jain - UX Researcher Portfolio showcasing user-centered research, strategy, and design." />
+  <meta property="og:title" content="Kritisha Jain - UX Researcher Portfolio">
+  <meta property="og:description" content="Explore case studies, research strategy, and UX thinking by Kritisha Jain.">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:url" content="https://kritisha-jain.github.io/Design">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="favicon.ico">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Open+Sans:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
+      background: #f7f9fb;
       color: #333;
     }
 
     nav {
-      background: #fff;
-      padding: 12px 30px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      background: white;
+      padding: 15px 30px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       position: sticky;
       top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
     }
 
     nav a {
+      margin: 0 20px;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
@@ -45,74 +48,102 @@
 
     header {
       background: #222;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 60px 20px;
     }
 
     header h1 {
       font-size: 36px;
       font-family: 'Montserrat', sans-serif;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
-      opacity: 0.8;
     }
 
     section {
-      max-width: 1000px;
-      background: #fff;
+      max-width: 960px;
       margin: 40px auto;
       padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .intro {
+      text-align: center;
+    }
+
+    .intro img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
     }
 
     h2 {
       font-family: 'Montserrat', sans-serif;
       font-size: 28px;
-      margin-bottom: 10px;
+      margin-top: 0;
     }
 
     p {
-      font-size: 17px;
+      font-size: 18px;
       line-height: 1.6;
-      margin-bottom: 20px;
     }
 
-    .intro {
-      text-align: center;
-      background: #e6e6e6;
-    }
-
-    .intro img {
-      width: 160px;
-      border-radius: 50%;
-      margin-top: 20px;
-    }
-
-    .resume a {
-      color: #0077cc;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    .resume a:hover {
-      text-decoration: underline;
-    }
-
-    iframe {
-      width: 100%;
-      height: 650px;
+    button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
       border: none;
-      border-radius: 8px;
-      margin-top: 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: rgba(0,0,0,0.9);
+    }
+
+    .modal-content {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      height: 90%;
+      background-color: #000;
+    }
+
+    .modal-content iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     .password-section {
       text-align: center;
+      margin-top: 20px;
     }
 
     .password-section input {
@@ -121,35 +152,26 @@
     }
 
     .password-section button {
-      padding: 10px 20px;
-      font-size: 16px;
       margin-left: 10px;
-      cursor: pointer;
+      padding: 10px 16px;
+      font-size: 16px;
     }
 
-    .locked iframe {
-      display: none;
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #f1f1f1;
+      font-size: 14px;
     }
 
-    .locked .password-section {
-      display: block;
+    footer a {
+      margin: 0 10px;
+      color: #0077cc;
+      text-decoration: none;
     }
 
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-      }
-
-      iframe {
-        height: 400px;
-      }
-
-      section {
-        padding: 25px;
-        margin: 20px;
-      }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -157,105 +179,100 @@
 
 <nav>
   <a href="index.html">Home</a>
-  <a href="about.html">About Me</a>
+  <a href="about.html">About</a>
   <a href="work.html">Work</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <header>
   <h1>Kritisha Jain's UX Portfolio</h1>
-  <p>Work in progress. All case studies are continuously updated.</p>
 </header>
 
 <section class="intro">
+  <img src="profile.jpg" alt="Kritisha Jain">
   <h2>Hi, I'm Kritisha</h2>
   <p>I'm a UX Researcher passionate about creating intuitive experiences. My work spans UX research, design strategy, and usability testing. I love solving complex user problems with thoughtful solutions.</p>
-  <img src="Capture.JPG" alt="Kritisha Jain">
 </section>
 
-<!-- <section class="about-me">
-  <h2>About Me</h2>
-  <p><strong>Kritisha Jain</strong><br>
-  UX Researcher | Design Strategist | MIT Alum</p>
-  <p>I’m a UX professional with 8+ years of experience solving complex design problems across software, hardware, APIs, and graphical interfaces. With a background in research, design, and storytelling, I specialize in uncovering user needs and translating them into thoughtful, intuitive experiences.</p>
-  <p>I’m currently a UX Researcher at MathWorks, and I bring a strategic, systems-level mindset to every project—whether it’s reimagining a developer tool, improving platform usability, or crafting the next big user journey.</p>
-</section> -->
-
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
-  <p>If you'd like to collaborate or discuss UX strategy, feel free to reach out!</p>
-  <p>Email: <a href="mailto:jkritisha@gmail.com">jkritisha@gmail.com</a></p>
-</section>
-
-<section class="resume">
-  <h2>Download My Resume</h2>
-  <p>You can download my latest resume by clicking the link below:</p>
-  <a href="kritisha-jain-resume.pdf" target="_blank" aria-label="Download Kritisha Jain’s resume as PDF">View Kritisha Jain’s Resume (PDF)</a>
-</section>
-
-<section class="case-study locked" id="locked-case">
-  <h2>Redesigning a Collaborative Platform for Better User Experience</h2>
-  <p>A case study focusing on improving the user submission and packaging experience for both casual and advanced users.</p>
-
+<section class="case-study">
+  <h2>Case Study 1: Improving User Submission Workflows</h2>
+  <p>Password-protected case study highlighting a redesigned submission and packaging workflow to support both advanced and casual users.</p>
   <div class="password-section">
-    <p>This case study is password protected.</p>
     <input type="password" id="casePassword" placeholder="Enter password">
-    <button onclick="unlockCaseStudy()">Submit</button>
+    <button onclick="unlockCaseStudy()">Unlock</button>
     <p>If you don't have the password, <a href="mailto:jkritisha@gmail.com">request access</a>.</p>
   </div>
-
-  <!-- <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8gIAbBQzrJJvziGHjRnz_xnOFXqhwBWIG1dIeibh7Aj541zzyf-OW-N70HUIOEXZM7ELtTVNQWcjl/pubembed?start=true&loop=false&delayms=3000" frameborder="0" width="1536" height="893" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+  <button id="launchCase1" style="display:none;" onclick="openModal('modal1')">View Case Study</button>
 </section>
+
+<section class="case-study">
+  <h2>Case Study 2: Designing for Inclusive Innovation</h2>
+  <p>Redesigning accessibility in makerspaces to enable equitable collaboration and creativity.</p>
+  <button onclick="openModal('modal2')">View Case Study</button>
+</section>
+
+<section class="case-study">
+  <h2>Case Study 3: Strengthening Campus Belonging Through Peer Connection</h2>
+  <p>Designing inclusive ways for experienced students to support newcomers during their transition to MIT life</p>
+  <button onclick="openModal('modal3')">View Case Study</button>
+</section>
+
+<!-- Modals -->
+<div class="modal" id="modal1">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ8gIAbBQzrJJvziGHjRnz_xnOFXqhwBWIG1dIeibh7Aj541zzyf-OW-N70HUIOEXZM7ELtTVNQWcjl/pubembed?start=true&loop=false&delayms=3000" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="modal" id="modal2">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRurnyddCjq8lbr08txZGdNooKwEK3BWKQFPnPNrFuNQ-ne55dQ90VMdSpU1kjRyAr96aMuDe3FvfO0/pubembed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+  </div>
+</div>
+
+<div class="modal" id="modal3">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSQ-lDTma5sLrTy2VQJ2CO---JcxmwrcwAFEb8QA19qnhrMm4Lg66JVdiJQaX2wdkGR6TssAXBiCBEw/pubembed?start=false&loop=false&delayms=3000" allowfullscreen></iframe>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Kritisha Jain</p>
+  <a href="mailto:jkritisha@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://www.linkedin.com/in/kritishajainuxresearcher/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/Kritisha-Jain" target="_blank"><i class="fab fa-github"></i></a>
+</footer>
 
 <script>
   function unlockCaseStudy() {
-    const input = document.getElementById('casePassword').value;
-    const caseStudy = document.getElementById('locked-case');
+    const input = document.getElementById('casePassword').value.trim();
     if (input === 'uxcase2024') {
-      caseStudy.classList.remove('locked');
+      document.getElementById('launchCase1').style.display = 'inline-block';
     } else {
       alert('Incorrect password. Please try again or email Kritisha.');
     }
   }
+
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+
+  window.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") {
+      document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
+      document.body.style.overflow = "auto";
+    }
+  });
 </script>
 
-<!-- CASE STUDY 2 -->
-<section id="case-study-2">
-    <h2>Case Study 2: Designing for Inclusive Innovation</h2>
-    <p>Redesigning accessibility in makerspaces to enable equitable collaboration and creativity.</p>
-    
-    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRurnyddCjq8lbr08txZGdNooKwEK3BWKQFPnPNrFuNQ-ne55dQ90VMdSpU1kjRyAr96aMuDe3FvfO0/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-  
-    <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vRurnyddCjq8lbr08txZGdNooKwEK3BWKQFPnPNrFuNQ-ne55dQ90VMdSpU1kjRyAr96aMuDe3FvfO0/pub?start=false&loop=false&delayms=3000" target="_blank">🔳 View Fullscreen</a></p>
-  </section>
-  
-  <!-- CASE STUDY 3 -->
-  <section id="case-study-3">
-    <h2>Case Study 3: Strengthening Campus Belonging Through Peer Connection</h2>
-    <p>Designing inclusive ways for experienced students to support newcomers during their transition to MIT life</p>
-    
-    <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; margin-bottom: 1rem;">
-      <iframe 
-        src="https://docs.google.com/presentation/d/e/2PACX-1vSQ-lDTma5sLrTy2VQJ2CO---JcxmwrcwAFEb8QA19qnhrMm4Lg66JVdiJQaX2wdkGR6TssAXBiCBEw/pubembed?start=false&loop=false&delayms=3000" 
-        frameborder="0" 
-        width="960" 
-        height="569" 
-        allowfullscreen="true" 
-        mozallowfullscreen="true" 
-        webkitallowfullscreen="true" 
-        style="position:absolute; top:0; left:0; width:100%; height:100%;">
-      </iframe>
-    </div>
-  
-    <a 
-      href="https://docs.google.com/presentation/d/e/2PACX-1vSQ-lDTma5sLrTy2VQJ2CO---JcxmwrcwAFEb8QA19qnhrMm4Lg66JVdiJQaX2wdkGR6TssAXBiCBEw/pub?start=false&loop=false&delayms=3000" 
-      target="_blank" 
-      style="display:inline-block; background:#007bff; color:#fff; padding:0.5rem 1rem; border-radius:6px; text-decoration:none;">
-      View Fullscreen
-    </a>
-  </section>
-  
-  
-  
 </body>
 </html>
