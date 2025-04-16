@@ -4,146 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Resume – Kritisha Jain</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <style>
-    /* Global Styles */
     body {
+      margin: 0;
+      padding: 0;
       font-family: 'Open Sans', sans-serif;
       background: #fdfdfd;
       color: #222;
-      margin: 0;
-      padding: 0;
       line-height: 1.6;
     }
-
-    /* Navigation */
     nav {
       text-align: center;
       padding: 20px;
-      background-color: #fff;
+      background: white;
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
-
     nav a {
       margin: 0 15px;
-      color: #0077cc;
-      text-decoration: none;
       font-weight: 600;
       font-family: 'Montserrat', sans-serif;
+      text-decoration: none;
+      color: #0077cc;
     }
-
     nav a:hover {
       text-decoration: underline;
     }
-
-    /* Header */
-    header {
-      padding: 60px 20px 40px;
-      text-align: center;
-      background-color: #f4f7fa;
+    .container {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
-
-    header h1 {
+    h1 {
       font-size: 36px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
-    }
-
-    /* Container */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    /* Section Styles */
-    .section {
       margin-bottom: 40px;
     }
-
-    .section h2 {
-      font-size: 28px;
+    h2 {
+      font-size: 20px;
+      margin-top: 40px;
+      margin-bottom: 10px;
       font-family: 'Montserrat', sans-serif;
       font-weight: 600;
-      color: #333;
-      margin-bottom: 20px;
     }
-
-    .section p {
-      font-size: 16px;
-      color: #444;
-    }
-
-    /* Job Styles */
-    .job {
+    .job, .section {
       margin-bottom: 30px;
     }
-
-    .job-title {
-      font-size: 20px;
-      font-weight: 600;
-      font-family: 'Montserrat', sans-serif;
-      color: #222;
-    }
-
-    .job-meta {
+    .meta {
       font-size: 14px;
       color: #666;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
-
-    .job ul {
-      list-style: disc;
-      padding-left: 20px;
-      color: #444;
-    }
-
-    .job li {
-      margin-bottom: 10px;
-    }
-
-    /* List Styles */
     ul {
-      list-style: disc;
       padding-left: 20px;
-      color: #444;
+      margin-top: 10px;
     }
-
     li {
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
-
-    /* Contact Section */
-    .contact {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .contact a {
+    .link {
       color: #0077cc;
       text-decoration: none;
-      font-weight: 600;
     }
-
-    .contact a:hover {
+    .link:hover {
       text-decoration: underline;
-    }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      body {
-        font-size: 14px;
-      }
-
-      .container {
-        padding: 20px;
-      }
     }
   </style>
 </head>
 <body>
 
-<!-- Navigation -->
 <nav>
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
@@ -152,61 +82,88 @@
   <a href="mailto:jkritisha@gmail.com">Contact</a>
 </nav>
 
-<!-- Header Section -->
-<header>
-  <h1>Resume</h1>
-</header>
-
-<!-- Main Content -->
 <div class="container">
+  <h1>Resume</h1>
 
-  <!-- About Section -->
   <div class="section">
-    <h2>About</h2>
-    <p>I’m Kritisha Jain — an internationally trained, award-winning UX Researcher and Design Strategist with 8+ years of experience across UX research, product design, and creative strategy. I bring human-centered innovation to life through immersive storytelling, participatory methods, and design strategy. I’ve worked with organizations like MathWorks, MIT, Mastercard Foundation, and Amnesty International to shape experiences in engineering tools, social impact technologies, and AI-powered platforms. I believe deeply in inclusive design, and my work has ranged from improving workflows for developers to making makerspaces accessible to the blind.</p>
+    <h2>Current Role</h2>
+    <div class="meta">UX Researcher · MathWorks · Natick, MA · Dec 2021 – Present</div>
+    <p>At MathWorks, I lead end-to-end UX research for MATLAB and Simulink features used by engineers worldwide — influencing product strategy across model-based design, real-time systems, and AI-driven applications. I’ve advised 20+ dev teams and improved 40+ features by conducting foundational research, usability testing, and accessibility audits that inform the company’s roadmap.</p>
+    <ul>
+      <li>Ran 50+ user studies across 4 product domains, increasing user satisfaction by 30%</li>
+      <li>Redesigned MATLAB File Exchange and prototyped a new enterprise repository used by 20K+ developers</li>
+      <li>Led research for accessibility in MATLAB Online, impacting 3 key product teams</li>
+    </ul>
   </div>
 
-  <!-- Professional Experience Section -->
   <div class="section">
-    <h2>Professional Experience</h2>
+    <h2>UX Research Fellowships</h2>
 
     <div class="job">
-      <div class="job-title">UX Researcher – MathWorks</div>
-      <div class="job-meta">Natick, MA (Hybrid) · 2021 – Present</div>
-      <ul>
-        <li>Led foundational and iterative UX research for MATLAB features, influencing core product direction and usability improvements.</li>
-        <li>Redesigned File Exchange submission workflows, validated through multiple rounds of usability testing with diverse user segments.</li>
-        <li>Introduced standardized UX testing for repository workflows used by third-party developers.</li>
-        <li>Drove accessibility enhancements in MATLAB Online, impacting strategic roadmap priorities.</li>
-        <li>Delivered insights in 8+ high-stakes design reviews, ensuring alignment across design, engineering, and PM stakeholders.</li>
-      </ul>
+      <div class="meta">Legatum Center, MIT + Mastercard Foundation · Cambridge, MA · 2020 – 2021</div>
+      <p>Designed a chatbot called <strong>Dastaan</strong> to support survivors of intimate partner violence in India. Led user research, testing, and investor presentations for this digital health initiative. Secured attention at MIT’s Legatum Demo Day.</p>
     </div>
 
     <div class="job">
-      <div class="job-title">UX Research Consultant – BetterHalf.ai</div>
-      <div class="job-meta">Remote · 2023</div>
-      <ul>
-        <li>Conducted deep qualitative research and contextual interviews with female users of the matchmaking platform.</li>
-        <li>Presented actionable insights to leadership that led to redesign of matchmaking flows and female-focused features.</li>
-      </ul>
+      <div class="meta">American Association of University Women (AAUW) · 2020 – 2022</div>
+      <p>Researched gender-based street harassment and economic inequality in India. Co-developed programs focused on self-defense, safe driving, and income mobility. Finalist at the MIT IDEAS Social Innovation Challenge.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Other Roles</h2>
+
+    <div class="job">
+      <div class="meta">UX Consultant · MIT (Prof. Eppinger + Prof. Yang) · 2020</div>
+      <p>Designed and tested the Product Design & Development site for MIT Mechanical Engineering. Boosted student and faculty engagement through UX improvements.</p>
     </div>
 
     <div class="job">
-      <div class="job-title">UX Research Fellow – MIT Legatum Center + Mastercard Foundation</div>
-      <div class="job-meta">Cambridge, MA · 2020 – 2021</div>
-      <ul>
-        <li>Led market and user research for ‘Dastaan’, a therapy chatbot for intimate partner violence survivors.</li>
-        <li>Insights contributed to roadmap direction and helped secure investor attention at Legatum Demo Day.</li>
-      </ul>
+      <div class="meta">UX Research Consultant · BetterHalf.ai · 2019</div>
+      <p>Researched matchmaking UX for female users on an AI-driven matrimonial platform. Improved flows based on qualitative insights from contextual interviews and user testing.</p>
     </div>
 
     <div class="job">
-      <div class="job-title">Design Research Fellow – AAUW</div>
-      <div class="job-meta">Cambridge, MA · 2020 – 2021</div>
-      <ul>
-        <li>Led design thinking workshops and contextual inquiry with underserved women to co-create self-defense programs.</li>
-        <li>MIT PKG IDEAS Finalist for Social Innovation 2020.</li>
-      </ul>
-   
-::contentReference[oaicite:0]{index=0}
- 
+      <div class="meta">Senior Copywriter · PAD Advertising · 2017 – 2018</div>
+      <p>Led strategy and content for 20+ Indian clients. Campaigns spanned print, web, and digital. Built narrative systems for healthcare, retail, and tech sectors.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Massachusetts Institute of Technology (MIT)</strong> · M.S. in Engineering & Management · GPA: 4.9/5</li>
+      <li><strong>Srishti School of Art, Design & Technology</strong> · Professional Diploma in Design</li>
+      <li><strong>University of Mumbai</strong> · B.A. in English Literature</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Publication</h2>
+    <p><strong>Accessible Makerspaces of the Future</strong> – MIT Thesis, 2021</p>
+    <p>Award-winning research on improving accessibility in engineering makerspaces for blind and visually impaired designers. Proposes design frameworks for inclusive, multisensory prototyping environments. <a href="https://dspace.mit.edu/handle/1721.1/140038" target="_blank" class="link">Read here</a>.</p>
+  </div>
+
+  <div class="section">
+    <h2>Recognition & Impact</h2>
+    <ul>
+      <li>Featured in <strong>British Vogue</strong> for coordinating India’s #IWillGoOut protest in 33 cities</li>
+      <li>Keynote speaker – #ChalkTheWalk at Community Business Conference</li>
+      <li>Mentor – Women in Design SF</li>
+      <li>Speaker – Brown University Womxn in STEM Symposium</li>
+      <li>MIT D-Lab showcase, MIT Fuse Fellow, IDEAS Challenge Finalist</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li><strong>Research:</strong> Interviews, Contextual Inquiry, Usability Testing, Journey Mapping</li>
+      <li><strong>Tools:</strong> Figma, Miro, MATLAB, Python, Adobe CC, UserZoom, Qualaroo</li>
+      <li><strong>Frameworks:</strong> Human-Centered Design, Service Design, Agile UX</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
